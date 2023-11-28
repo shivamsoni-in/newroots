@@ -1,0 +1,120 @@
+ .video-cover {
+        width: 100%;
+        height: auto;
+        float: left;
+        border-radius: 30px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+    }
+
+    
+    picture img {
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+    }
+
+ 
+    .team-text strong {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+
+
+    .btn-vedio {
+        position: relative;
+         z-index: 1;
+       margin-top: 0%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 50px;
+    height: 50px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        padding: 27px 20px 18px 28px;
+    }
+    .btn-vedio:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+  width: 60px;
+    height: 60px;
+    background: #d7b961;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.btn-vedio:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #d7b961;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+.btn-vedio span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    margin-left: 12px;
+    margin-top: -6px;
+    border-left: 25px solid #080808;
+    border-top: 14px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+    .team-text {
+        position: relative;
+      padding: 10px 10px 10px 10px;
+        text-align: center;
+        transition: .3s;
+        z-index: 2;
+    }
+      p .link {
+        color: red;
+        font-weight: bold;
+    }
+.title_li {
+    font-weight: 600 !important;
+    color: black;
+}
+
+   .text-bold {
+        font-weight: bold;
+    }
+
+    .box {
+        width: 75%;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+   .item_img img{
+       border-radius:20px;
+   }
+   
+   
+   @media only screen and (max-width: 767px){
+    .team-text {
+      padding: 1px 1px 1px 1px;
+       
+    }
+   }
+  
